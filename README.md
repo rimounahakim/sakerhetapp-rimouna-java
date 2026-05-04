@@ -1,4 +1,5 @@
 ### Säkerhetsapp### 
+![Threat Model](diagram.png)
 
 ## Beskrivning
 Detta projekt är en Java-applikation där användare kan registrera sig, logga in och skicka meddelanden.  
