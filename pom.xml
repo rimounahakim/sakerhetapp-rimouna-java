@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Maven projekt för säkerhetsapplikation -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Grundinfo om projektet -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Gruppnamn -->
+    <groupId>se.bibliotek</groupId>
+
+    <!-- Projektets namn -->
+    <artifactId>sakerhetapp</artifactId>
+
+    <!-- Version -->
+    <version>0.0.1-SNAPSHOT</version>
+
+    <!-- Java version -->
+    <properties>
+        <java.version>17</java.version>
+    </properties>
+
+    <!-- Bibliotek (dependencies) -->
+    <dependencies>
+
+        <!-- BCrypt används för att hash:a lösenord -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+
+        <!-- Log4j används för loggning -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+
+        <!-- Test bibliotek -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <!-- Build inställningar -->
+    <build>
+        <plugins>
+
+            <!-- Kompilerar Java kod -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+
+            <!-- Skapar SBOM (bom.json) -->
+            <plugin>
+                <groupId>org.cyclonedx</groupId>
+                <artifactId>cyclonedx-maven-plugin</artifactId>
+                <version>2.7.9</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>makeBom</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
