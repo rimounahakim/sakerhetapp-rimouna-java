@@ -1,0 +1,316 @@
+{
+  "bomFormat" : "CycloneDX",
+  "specVersion" : "1.4",
+  "serialNumber" : "urn:uuid:6dc5449b-1c4b-4b61-a632-5c45fcec08f3",
+  "version" : 1,
+  "metadata" : {
+    "timestamp" : "2026-05-04T02:17:23Z",
+    "tools" : [
+      {
+        "vendor" : "OWASP Foundation",
+        "name" : "CycloneDX Maven plugin",
+        "version" : "2.7.9",
+        "hashes" : [
+          {
+            "alg" : "MD5",
+            "content" : "8e595cdb67f17e4b41e046456970591d"
+          },
+          {
+            "alg" : "SHA-1",
+            "content" : "69e8ca804520d09ce4657e7235bae84d01cbffa6"
+          },
+          {
+            "alg" : "SHA-256",
+            "content" : "aa09074fe5aa403c008cd4fc7ef8ce41cd244489337f16b3e91a3914158a4db8"
+          },
+          {
+            "alg" : "SHA-512",
+            "content" : "1488a8112da8e675813d7585f57c5efb178aed32901118186ee12d0e4ae3d19c53774c7f860bf70d17d70f050119b69443a2637cf641675b4b5d9cdcdd69b89b"
+          },
+          {
+            "alg" : "SHA-384",
+            "content" : "b097295dfbf10887abc6eec58d4d0822cde5a73d1f5c1cf183a57bf569016ad5ced9d34efae3e574d82bb62837540c6c"
+          },
+          {
+            "alg" : "SHA3-384",
+            "content" : "289f9520bd73a2031276248a6ef8f0891c691062c2d1ea86a2bc9ea8db2c52377d92a53be9957179e71aee3deda26a8c"
+          },
+          {
+            "alg" : "SHA3-256",
+            "content" : "32b50a7efe5d491a4039c0017eca3cf49d98b55fc66d06b3dd06209487323474"
+          },
+          {
+            "alg" : "SHA3-512",
+            "content" : "1daf813da53e5d5cda4d0302ff3a5e388aa45d96ebe6dcbe240f35d33f14b1e6390f6bbe7f21f3ed8cf96ebd9f5516a08b18487b7339715109c81cebfc1563df"
+          }
+        ]
+      }
+    ],
+    "component" : {
+      "group" : "se.bibliotek",
+      "name" : "sakerhetapp",
+      "version" : "0.0.1-SNAPSHOT",
+      "licenses" : [ ],
+      "purl" : "pkg:maven/se.bibliotek/sakerhetapp@0.0.1-SNAPSHOT?type=jar",
+      "type" : "library",
+      "bom-ref" : "pkg:maven/se.bibliotek/sakerhetapp@0.0.1-SNAPSHOT?type=jar"
+    },
+    "properties" : [
+      {
+        "name" : "maven.goal",
+        "value" : "makeBom"
+      },
+      {
+        "name" : "maven.scopes",
+        "value" : "compile,provided,runtime,system"
+      }
+    ]
+  },
+  "components" : [
+    {
+      "group" : "org.mindrot",
+      "name" : "jbcrypt",
+      "version" : "0.4",
+      "description" : "OpenBSD-style Blowfish password hashing for Java",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "d2b39d874e0d512f85386a72b0083682"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "af7e61017f73abb18ac4e036954f9f28c6366c07"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "e183f6f59404fc1e12073cfea4ace7ea103c900463cd21fb609a7c617ecdf624"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "95ffe1f6593f83da047ff289a52b5ef73adcaca4a9a990a47744fbd50a52fce39958c17ed393e95d64093b2acbcaba39ba0b5b983a2e0ad98ce5c6e9282a67cd"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "66a24af2134e6fcee1f4232c2c4bab43ab97d0c8ffbbc009f9bb0e5ef2a7d8795a6da3c6b47c583675b98036958aa729"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "33cf5e13897f25c525017888e7fcd2faf9a0f25135be03a65dd154feb11455e33c1df31963470b2ecaaba5267f6ad652"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "a347c842385e1d76780f9afe2200a7b9815bcd873b2a9fdd2652d0b0a5e0d324"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "5a71c6f1fde98865302e8c9ee6c99ace9efa220c0193bcdd56423015d1c73e54bd65f19a9a3ba3199b242589eb9ccc96b1d6c0d413387f8e8fbed7c691fc8790"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "ISC",
+            "url" : "https://www.isc.org/licenses/"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.mindrot/jbcrypt@0.4?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://github.com/djmdjm/jBCrypt"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/djmdjm/jBCrypt.git"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.mindrot/jbcrypt@0.4?type=jar"
+    },
+    {
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.logging.log4j",
+      "name" : "log4j-core",
+      "version" : "2.20.0",
+      "description" : "The Apache Log4j Implementation",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "20bd40d026d35a93fe710acb141e93da"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "eb2a9a47b1396e00b5eee1264296729a70565cc0"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "6137df848cdaed9f4d5076f75513c6c85da80b953f4e7acca38098b770763f55"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "a7fe8fa2304c1b013513c1838013804cf601a7148dfef95642ea763c9550a6d844d9a1e528c9c21efc7ea830d13fbbb55e2db2c2eeb5542c4d9f00c127f211e4"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "1d8b0349286118f102014706f02b7851f10ca0b1554bd7a2e1efdda76ccab6e0abd967490d06fca030f2a26289686275"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "1448a9c78c339abc0768deaa54e4d680091a6e6539ba2589e09ae6f5988176fcef0ee16b0b574a37374eeac0b8c91616"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "11a9f2311fbfcc334ff2ab26d04fd4e265b94c12f206c676ff1913e90ae4c916"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "ed2bc1a05c856f7ad3ad71cbcb9d2bc9104d3a9badeadda0886616c1c99eb8442577e16bd8d85ca2437176e379a4307d43c3e34157165210460dfc7bf3ca3f9d"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.logging.log4j/log4j-core@2.20.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://logging.apache.org/log4j/2.x/log4j-core/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/apache/logging-log4j2/actions"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://logging.apache.org/log4j/2.x/download.html"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/logging-log4j2/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?log4j-user@logging.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/logging-log4j2/log4j-core"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.logging.log4j/log4j-core@2.20.0?type=jar"
+    },
+    {
+      "publisher" : "The Apache Software Foundation",
+      "group" : "org.apache.logging.log4j",
+      "name" : "log4j-api",
+      "version" : "2.20.0",
+      "description" : "The Apache Log4j API",
+      "scope" : "required",
+      "hashes" : [
+        {
+          "alg" : "MD5",
+          "content" : "f9446464667f0139b839b5e9da37f5b9"
+        },
+        {
+          "alg" : "SHA-1",
+          "content" : "1fe6082e660daf07c689a89c94dc0f49c26b44bb"
+        },
+        {
+          "alg" : "SHA-256",
+          "content" : "2f43eea679ea66f14ca0f13fec2a8600ac124f5a5231dcb4df8393eddcb97550"
+        },
+        {
+          "alg" : "SHA-512",
+          "content" : "851016b38421d21864bb3073089c44000f941bfbaa9dc518db7bf7fb3c7f942bfb2c0c7b832e375e82b2f285379bd0935e42aa1833817daacb4fca2a6a9500bc"
+        },
+        {
+          "alg" : "SHA-384",
+          "content" : "12b05c61f49caab0b845e93967228a3bd3ab096c4ea1516cb7263f49963137a688a178ddebe790ccc3c0c73f2d4440fc"
+        },
+        {
+          "alg" : "SHA3-384",
+          "content" : "87151e10c182a828d06fb5299361f01091f5ff066c3d8ba1fac0358d40c370a06ea46d9d93613499ebf94a855aef2f41"
+        },
+        {
+          "alg" : "SHA3-256",
+          "content" : "2047730cb45c594da67d019cbd9f379e1d409a574deadfc9bc907461047f1fde"
+        },
+        {
+          "alg" : "SHA3-512",
+          "content" : "5fde3529958bd5e9567f0dc6015c58621521641cfe0517eb1237413c750558415fdeb45cc1b4332c3d1f09938fc8fe327de86cc876ed52594c216d2c04c9d2d5"
+        }
+      ],
+      "licenses" : [
+        {
+          "license" : {
+            "id" : "Apache-2.0"
+          }
+        }
+      ],
+      "purl" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+      "externalReferences" : [
+        {
+          "type" : "website",
+          "url" : "https://logging.apache.org/log4j/2.x/log4j-api/"
+        },
+        {
+          "type" : "build-system",
+          "url" : "https://github.com/apache/logging-log4j2/actions"
+        },
+        {
+          "type" : "distribution",
+          "url" : "https://logging.apache.org/log4j/2.x/download.html"
+        },
+        {
+          "type" : "issue-tracker",
+          "url" : "https://github.com/apache/logging-log4j2/issues"
+        },
+        {
+          "type" : "mailing-list",
+          "url" : "https://lists.apache.org/list.html?log4j-user@logging.apache.org"
+        },
+        {
+          "type" : "vcs",
+          "url" : "https://github.com/apache/logging-log4j2/log4j-api"
+        }
+      ],
+      "type" : "library",
+      "bom-ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar"
+    }
+  ],
+  "dependencies" : [
+    {
+      "ref" : "pkg:maven/se.bibliotek/sakerhetapp@0.0.1-SNAPSHOT?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.mindrot/jbcrypt@0.4?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-core@2.20.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.mindrot/jbcrypt@0.4?type=jar",
+      "dependsOn" : [ ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.logging.log4j/log4j-core@2.20.0?type=jar",
+      "dependsOn" : [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar"
+      ]
+    },
+    {
+      "ref" : "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+      "dependsOn" : [ ]
+    }
+  ]
+}
